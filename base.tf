@@ -15,5 +15,6 @@ resource "aws_instance" "my_ec2_instance" {
   tags = {
     my_tags     = var.my_tags
   }
+  key_name = var.key_name
   count = 2
 }

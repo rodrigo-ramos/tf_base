@@ -1,11 +1,9 @@
 variable "access_key" {
   description = "The AWS access key"
-  default     = "AKIATHEUR7EUIIAEXTDS"
 }
 
 variable "secret_key" {
   description = "The AWS secret key"
-  default     = "0z7ljB2VMJ063kXdbmny2euN+zN5QQej0ustVdZ8"
 }
 
 variable "region" {
@@ -28,4 +26,7 @@ variable "my_tags" {
 variable "ec2_type" {
   default = "t2.micro"
   description = " The type of ec2 instance"
+}
+variable "key_name" {
+  description = "The key for ec2 instances"
 }
