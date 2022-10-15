@@ -9,12 +9,11 @@ provider "aws" {
 # aws_instance reference to EC2 
 # base is the name assigned by me :)
 
-resource "aws_instance" "base_coso" {
+resource "aws_instance" "my_ec2_instance" {
   ami           = var.amis[var.region]
-  instance_type = "t2.micro"
+  instance_type = var.ec2_type
   tags = {
-    name     = var.my_tags
-    provider = "terraform"
+    my_tags     = var.my_tags
   }
   count = 2
 }

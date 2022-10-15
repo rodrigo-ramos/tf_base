@@ -21,5 +21,11 @@ variable "amis" {
   }
 }
 variable "my_tags" {
-  
+  default = {
+    "my_tags" = "not assigned"
+  }
+}
+variable "ec2_type" {
+  default = "t2.micro"
+  description = " The type of ec2 instance"
 }
