@@ -24,7 +24,7 @@ variable "my_tags" {
   }
 }
 variable "ec2_type" {
-  default = "t2.micro"
+  default     = "t2.micro"
   description = " The type of ec2 instance"
 }
 variable "key_name" {

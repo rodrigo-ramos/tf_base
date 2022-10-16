@@ -13,8 +13,8 @@ resource "aws_instance" "my_ec2_instance" {
   ami           = var.amis[var.region]
   instance_type = var.ec2_type
   tags = {
-    my_tags     = var.my_tags
+    my_tags = var.my_tags
   }
   key_name = var.key_name
-  count = 2
+  count    = 2
 }
